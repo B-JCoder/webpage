@@ -572,6 +572,7 @@ section .content {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 3;
+  /* margin: 20px 10px; */
   padding: 0 20px;
   overflow-x: auto;
   overflow-y: hidden;
@@ -588,16 +589,17 @@ section .content {
   flex-wrap: nowrap;
   overflow-x: auto;
   padding: 0 20px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 /* Styles for individual feature items */
 .features-list div {
   background-color: #0056b3;
   padding: 20px;
+  margin: 10px 0px;
   font-size: 13px;
   border-radius: 20px;
-  box-shadow: 0 0 2px cyan, 0 0 2px cyan, 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan;
+  box-shadow: 0 0 1px cyan, 0 0 1px cyan, 0 0 1.5px cyan, 0 0 2px cyan, 0 0 5px cyan;
   transition: transform 0.5s, background 0.5s;
   min-width: 250px;
   max-width: 300px;
@@ -605,13 +607,14 @@ section .content {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 /* Hover effects for feature items */
 .features-list div:hover {
-  transform: scale(1.05);
-  background-color: #004494;
-  box-shadow: 0 0 2px cyan, 0 0 2px cyan, 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 60px cyan;
+  transform: scale(1);
+  background-color: black;
+  box-shadow: 0 0 1px cyan, 0 0 1px cyan, 0 0 5px cyan, 0 0 3px cyan, 0 0 25px cyan;
 }
 
 /* Styles for icons within feature items */
@@ -622,10 +625,10 @@ section .content {
 
 /* Styles for headings within feature items */
 .features-list div h2 {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 23px;
+  font-weight: 600;
   margin-bottom: 10px;
-  color: rgba(0, 0, 0, 0.63);
+  color: #fff;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
